@@ -18,7 +18,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="bg-gray-900 min-h-screen w-full text-white">
+    <div className="bg-gray-900 min-h-screen w-full text-white mr-0">
       {loading ? (
         <Loader />
       ) : (

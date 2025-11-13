@@ -15,7 +15,7 @@ export default function Navbar() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >
-        =
+        
       </button>
 
       {/* Navigation menu */}

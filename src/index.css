@@ -1,18 +1,41 @@
 @import "tailwindcss";
 
-/* Enable dark mode via `.dark` class instead of system preference */
-@custom-variant dark (&:where(.dark, .dark *));
+/* index.css or global styles, if you want general responsive rules */
+body {
+  @apply bg-gray-900 text-white min-h-screen;
+}
 
-/* Theme tokens for custom colors and gradients */
-@theme {
-  /* Custom color token */
-  --color-rose-gold: #b76e79;
-  --color-teal: #0f766e;
+/* For Navbar: adjust flex orientation and padding */
+.navbar {
+  @apply flex flex-col sm:flex-row items-center justify-between p-4 sm:px-8;
+}
 
-  /* Custom gradient background */
-  --bg-teal-rose-gradient: linear-gradient(
-    135deg,
-    var(--color-teal),
-    var(--color-rose-gold)
-  );
+/* For Hero section: center content and add padding */
+.hero {
+  @apply text-center px-4 sm:px-8 md:px-16 py-10;
+}
+
+/* For Services: responsive grid layout */
+.services {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-8 md:px-16 py-10;
+}
+
+/* For About section: max width and padding */
+.about {
+  @apply max-w-4xl mx-auto px-4 sm:px-8 md:px-16 py-10;
+}
+
+/* For Contact form: width and spacing */
+.contact {
+  @apply max-w-lg mx-auto px-4 sm:px-8 md:px-16 py-10;
+}
+
+/* For Footer: padding and text-center */
+.footer {
+  @apply text-center py-6 px-4;
+}
+
+/* For Loader: center the loader */
+.loader {
+  @apply flex justify-center items-center min-h-screen;
 }

@@ -9,13 +9,13 @@ export default function Navbar() {
         Aaiwa
       </h1>
 
-      {/* Hamburger button for mobile */}
+      {/* Hamburger menu button (visible on small screens) */}
       <button
-        className="text-3xl sm:hidden focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
+        className="sm:hidden text-3xl text-gray-700 dark:text-gray-200 focus:outline-none"
         aria-label="Toggle menu"
       >
-        
+        {isOpen ? "✕" : "☰"}
       </button>
 
       {/* Navigation menu */}
